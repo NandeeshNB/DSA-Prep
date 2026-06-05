@@ -1,7 +1,7 @@
 package LeetCode;
 
 public class koko_eating_875 {
-    public int minEatingSpeed(int[] piles, int h) {
+    public static int minEatingSpeed(int[] piles, int h) {
         int larg = Integer.MIN_VALUE;   
         //Largest Element in the Array
         //Largest Element is the maximum range , where koko can eat
@@ -26,12 +26,17 @@ public class koko_eating_875 {
         return ans;
     }
 
-    private int time_taken(int[] piles, int k){
+    private static int time_taken(int[] piles, int k){
         double req_hrs = 0;
         for(int num:piles){
             req_hrs += Math.ceil((double)num / k); //Type conversion is important (num/k) return int value 
         }
 
         return (int)req_hrs;
+    }
+    public static void main(String[] args) {
+        int[] piles={3,6,7,11};
+        int h=8;
+        System.out.println(minEatingSpeed(piles, h));
     }
 }
