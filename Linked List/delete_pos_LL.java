@@ -1,0 +1,46 @@
+class Node{
+    int data;
+    Node next;
+    Node(int x){
+        this.data=x;
+        this.next=null;
+    }
+}
+public class delete_pos_LL {
+    static Node deletePos(Node head, int pos){
+        Node temp=head;
+        if (pos==1) {
+            head=temp.next;
+            return head;
+        }
+        Node prev=null;
+        for(int i=1;i<pos;i++){
+            prev=temp;
+            temp=temp.next;
+        }
+        prev.next=temp.next;
+        return head;
+    }
+    static void printlist(Node head){
+        Node temp=head;
+        while (temp!=null) {
+            System.out.print(temp.data);
+            if(temp.next!=null){
+                System.out.print("->");
+            }
+            temp=temp.next;
+        }
+        System.out.println();
+    }
+    public static void main(String[] args) {
+        Node head= new Node(1);
+        head.next=new Node(2);
+        head.next.next=new Node(3);
+        head.next.next.next=new Node(4);
+        head.next.next.next.next=new Node(5);
+        printlist(head);
+        int x=3;
+        head=deletePos(head,x);
+        printlist(head);
+}
+}
