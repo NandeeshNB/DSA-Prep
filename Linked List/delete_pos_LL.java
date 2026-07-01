@@ -39,8 +39,7 @@ public class delete_pos_LL {
         head.next.next.next=new Node(4);
         head.next.next.next.next=new Node(5);
         printlist(head);
-        int x=3;
-        head=deletePos(head,x);
+        head=deletePos(head,4);
         printlist(head);
 }
 }
