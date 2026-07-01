@@ -54,6 +54,7 @@ public class delete_elementCCL {
         Node last=first.next.next;
         last.next=first;
         printList(last);
+        printList(last);
         last=deleteEle(last,3);
         printList(last);
     }
