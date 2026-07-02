@@ -44,9 +44,9 @@ public class imp_stack_dynamic {
         st.push(3);
         st.push(4);
         
-        //System.out.println("Popped : "+st.pop());
-        //System.out.println("Popped : "+st.pop());
-        //System.out.println("Popped : "+st.pop());
+        System.out.println("Popped : "+st.pop());
+        System.out.println("Popped : "+st.pop());
+        System.out.println("Popped : "+st.pop());
         System.out.println("Top element : "+st.peek());
         System.out.println("Is stack empty : "+(st.isEmpty()?"Yes":"No"));
         System.out.println("Stack Size : "+st.size());
