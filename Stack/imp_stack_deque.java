@@ -10,6 +10,7 @@ public class imp_stack_deque {
         st.push(20);
         st.push(30);
         System.out.println(st.pop()+" is Popped");
+        System.out.println(st.pop()+" is Popped");
         System.out.println("Top Element : "+st.peek());
     }
 }
