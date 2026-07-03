@@ -6,7 +6,7 @@ public class iterateHash {
         hs.add("Nandeesh");
         hs.add("nb");
         hs.add("NB");
-        hs.add("Hatru");
+        
 
         //using iterator() method
         Iterator<String> i=hs.iterator();
