@@ -62,5 +62,8 @@ public class queue_imp_arr {
         q.dequeue();
         System.out.println("Front : "+q.getFront());
         System.out.println("Rear : "+q.getRear());
+        for (int x : q.arr) {
+            System.out.println(x);
+        }
     }
 }
