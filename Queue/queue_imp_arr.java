@@ -1,8 +1,8 @@
 package Queue;
 class myQueue{
-    int []arr;
-    int capacity;
-    int size;
+    public int []arr;
+    private int capacity;
+    public int size;
     public myQueue(int capacity){
         this.capacity=capacity;
         arr=new int[capacity];
