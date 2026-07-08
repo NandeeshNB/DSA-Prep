@@ -55,6 +55,14 @@ class mQueue{
         return front.data;
     }
 
+    public int getRear(){
+        if (isEmpty()) {
+            System.out.println("Queue Empty");
+            return -1;            
+        }
+        return rear.data;
+    }
+
     public int size(){
         return size;
     }
@@ -68,6 +76,7 @@ public class queue_imp_ll {
         System.out.println("Dequeue : "+q.dequeue());
         q.enqueue(40);
         System.out.println("Front : "+q.getFront());
+        System.out.println("Rear : "+q.getRear());
         System.out.println("Size : "+q.size());
     }
 }
